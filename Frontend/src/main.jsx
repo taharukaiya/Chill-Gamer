@@ -1,17 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter } from "react-router";
-import { RouterProvider } from "react-router/dom";
+import router from "./routes/router.jsx";
+import { RouterProvider } from "react-router-dom";
 import "./index.css";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <div className="text-3xl font-bold text-red-500">Hellomnmn World</div>
-    ),
-  },
-]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
